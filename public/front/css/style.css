@@ -1,0 +1,3049 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Muli', sans-serif;
+    background-color: #f9f9f9;
+}
+
+h3{
+  word-break: break-word;
+}
+p{
+  word-break: break-word;
+}
+
+::selection{
+    background-color:#ed1c24;
+    color:#fff;
+}
+.page-load {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #ed1c24;
+    background: -moz-linear-gradient(left, #ffffff 10%, #ed1c24);
+    background: -webkit-linear-gradient(left, #ffffff 10%, #ed1c24);
+    background: -o-linear-gradient(left, #ffffff 10%, #ed1c24);
+    background: -ms-linear-gradient(left, #ffffff 10%, #ed1c24);
+    background: linear-gradient(to right, #ffffff 10%, #ed1c24);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .page-load:before {
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .page-load:after {
+    background: #ffffff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+.page-load-outer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1400px;
+}
+
+header {
+    height: auto;
+    background-color: #fff;
+}
+
+header .bakanlik-logo,
+header .sindirgi-logo {height: 100%;display: flex;align-items: center;}
+
+header .bakanlik-logo img {
+    position: relative;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 130px;
+}
+
+header .sindirgi-logo img {
+    position: relative;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 130px;
+}
+
+header .text {
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+header .text p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(27, 27, 27);
+    letter-spacing: 5px;
+    font-size: 23px;
+}
+
+header .menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* margin-top: 45px; */
+}
+
+header .menu ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header .menu ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    color: #161616;
+    font-size: 15px;
+}
+
+header .menu ul li:hover{
+    border-bottom: 1px solid #ed1c24;
+}
+
+header .menu ul li a::after {
+    content: "";
+    border-right: 1px solid rgb(202, 202, 202);
+    position: absolute;
+    height: 20px;
+    margin-left: 17px;
+}
+
+header .menu ul li a[href="##"]::after{
+    content: none;
+}
+
+header .menu ul li a:hover {
+    text-decoration: none;
+}
+
+.slider {
+    position: relative;
+    height: 660px;
+}
+
+.slider h5{
+    font-size: 40px;
+}
+
+.slider p{
+    font-size: 30px;
+}
+.slider img {
+    position: relative;
+    height: 660px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    width: 100%;
+    height: 40px;
+}
+
+.section-1 {
+    height: 45em;
+    background-color: #f9f9f9;
+    box-shadow: 0 3px 5px 0px #757575;
+}
+
+.content {
+    height: auto;
+}
+
+.content .title {
+    margin-top: 3em;
+}
+
+.content .title h3 {
+    color: #161616;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.content .text {
+    margin-top: 2em;
+    height: auto;
+}
+
+.content .text p {
+    text-align: justify;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.content .left-menu {
+    margin-top: 10em;
+}
+
+.content .left-menu ul {
+    padding: 0;
+}
+
+.content .left-menu ul li {
+    margin-top: 8em;
+    list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.content .left-menu ul li:hover{
+
+}
+
+.content .left-menu ul li:nth-child(1) {
+    background-color: #3a51a2;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity: 0.9;
+}
+
+.content .left-menu ul li:nth-child(2) {
+    background-color: #4e4e4e;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity: 0.9;
+}
+
+.content .left-menu ul li:nth-child(3) {
+    background-color: #ed1c24;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity: 0.9;
+}
+
+.content .left-menu ul li a {
+    color: #fff;
+    padding-left: 9em;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content .left-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.content .right-menu {
+    margin-top: 10em;
+}
+
+.content .right-menu ul {
+    padding: 0;
+}
+
+.content .right-menu ul li {
+    margin-top: 8em;
+    list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.content .right-menu ul li:nth-child(1) {
+    background-color: #ed1c24;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    opacity: 0.9;
+}
+
+.content .right-menu ul li:nth-child(2) {
+    background-color: #4e4e4e;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    opacity: 0.9;
+}
+
+.content .right-menu ul li:nth-child(3) {
+    background-color: #3a51a2;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    opacity: 0.9;
+}
+
+.content .right-menu ul li a {
+    color: #fff;
+    padding-left: 33px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content .right-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.section-2 {
+    height: 900px;
+}
+
+.content .carpet .title {
+    margin-top: 4em;
+}
+
+.content .carpet .title h3 {
+    color: #801d32;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+/* .content .carpet .image {
+    margin-top: 3em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+} */
+
+/* .content .carpet .image img {
+    object-fit: cover;
+    position: relative;
+    border-radius: 5px;
+    height: 40em;
+    box-shadow: 0px 50px 50px -25px #1d1d1d;
+} */
+
+.content .carpet .carpet-text {margin-top: 1em;}
+
+.content .carpet .carpet-text p {
+    text-align: center;
+}
+
+.content .carpet .carpet-text a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 18px;
+    background: #801d32b5;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.content .carpet-bg {
+    position: absolute;
+    background: url(../images/hali.jpg) no-repeat;
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.9; */
+    box-shadow: 2px 2px 4px -1px black;
+}
+
+.content .carpet-details-text{
+    height: 740px;
+    display: flex;
+    align-items: flex-end;
+}
+.content .carpet-details-text p{
+    border-radius: 10px;
+    font-size: 19px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+
+.content .carpet-details-text span{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.section-mayor{
+    height: auto;
+}
+
+.section-mayor .mayor-bg P{
+    color:#fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+.section-mayor .mayor-bg span{
+
+font-weight: 100;
+}
+.section-mayor .mayor-bg{
+    width: 100%;
+    height: 147px;
+    background-color: #4e4e4e;
+    position: absolute;
+    top: 44em;
+    padding-top: 2em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+
+.section-mayor .mayor-image{
+
+}
+.section-mayor .mayor-image img{
+    position: relative;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 2em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    height: 865px;
+}
+
+.section-mayor .mayor-title-0{
+    margin-top: 5em;
+}
+.section-mayor .mayor-text-0{
+    margin-top: 2em;
+}
+
+.section-mayor .mayor-text-0 b:first-child{
+    color: #9abf16;
+    border-left: 2px solid currentColor;
+    padding: 10px;
+}
+
+.section-mayor .mayor-title-0 h3{
+    font-size: 20px;
+    text-align: center;
+}
+.section-mayor .mayor-text-0 p{
+    font-size: 15px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.section-3 {
+    height: 335px;
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+.content .section-3 .festival-bg {
+    width: 100%;
+    height: 300px;
+    background: url(../images/anasayfa-festival.png) no-repeat;
+    background-size: cover;
+    background-position: 0px 40%;
+    border-radius: 10px;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+
+.content .section-3 .festival-bg img {
+    width: 100%;
+    object-fit: contain;
+    height: 210px;
+    object-position: right;
+    filter: invert(100%)sepia(0)saturate(0%)hue-rotate(0deg)brightness(100%)contrast(100%);
+}
+
+.content .section-3 .festival-text p{
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 48px;
+}
+
+.content .section-3 .festival-text a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #3a51a2c2;
+    border-radius: 5PX;
+    padding: 5px;
+}
+
+.content .section-3 .festival-bg .text p {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-size: 70px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.line-1 {
+    display: none;
+    width: 100%;
+    height: 8px;
+    background-color: #ed1c24;
+    margin: 10px 0 10px 0;
+    margin-top: 3em;
+    opacity: 0.9;
+    /* clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%); */
+}
+
+.line-2 {
+    width: 100%;
+    height: 8px;
+    display: none;
+    background-color: #3a51a2;
+    /* margin: 10px 0 10px 0; */
+    opacity: 0.9;
+    /* clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%); */
+}
+
+.line-gray {
+    width: 100%;
+    height: 8px;
+    background-color: #3a51a2;
+    /* margin: 10px 0 10px 0; */
+    opacity: 0.9;
+    display: none;
+}
+
+.section-4 {
+    height: auto;
+    margin-bottom: 3em;
+    background-color: #f9f9f9;
+}
+
+.section-4 .news-title-popular h3{
+    text-align: left;
+    text-transform: uppercase;
+    color: #161616;
+    font-size: 30px;
+}
+
+.section-4 .news-title {
+    margin: 1em 0 1em 0;
+}
+
+.section-4 .news-title h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 21px;
+    text-align: right;
+    background: #4c4c4c;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.section-4 .news-title a{
+    text-decoration: none;
+}
+
+.section-4 .news-title-2 {width: 85%;margin: 0 auto;margin-top: 2em;}
+
+.section-4 .news-title-2 h3 {
+    color: #161616;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    word-break: break-word;
+    text-align: left;
+}
+
+.section-4 .item {
+    height: 700px;
+    background: #9e9e9e38;
+    border-radius: 10px;
+    transition: .5s;
+}
+.section-4 .item:hover{
+    background-color: #d0d0d0;
+}
+
+.section-4 .item .image {}
+
+.section-4 .item .image img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+
+.section-4 .item .news-description {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+.section-4 .item .news-description p {
+    text-align: justify;
+    font-size: 14px;
+    margin: 0;
+}
+
+.section-4 .item .news-description span {
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.section-4 .item .news-description a {
+    text-decoration: none;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    color: #fff !important;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+    color: #fff !important;
+}
+.baskanin-mesaji,
+.baskanin-mesaji .content{
+    height: auto;
+    margin-bottom: 2em;
+}
+.baskanin-mesaji .banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 18em;
+    background: url(../images/yagcibedir-halisi-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.baskanin-mesaji .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.baskanin-mesaji .title{
+    margin-top: 7em;
+}
+.baskanin-mesaji .title h3{
+    text-align: left;
+}
+.baskanin-mesaji .text{
+
+}
+.baskanin-mesaji .text p{
+    margin: 0;
+    width: 90%;
+}
+.baskanin-mesaji .image{
+    margin-top: 7em;
+}
+.baskanin-mesaji .image img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 41em;
+    border-radius: 5px;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+.baskanin-mesaji .sindirgida-ne-yenir{
+
+}
+.sindirgida-ne-yenir table{
+    margin-top: 3em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    width: 100%;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+table {}
+
+.sindirgida-ne-yenir .table{
+    overflow: scroll;
+}
+.sindirgida-ne-yenir table th{
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px;
+    font-size: 15px;
+}
+.sindirgida-ne-yenir table tr td{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+}
+.sindirgida-ne-yenir table tbody tr:nth-child(odd){
+    background-color: #444;
+}
+.sindirgida-ne-yenir table tbody tr:nth-child(even){background-color: #444;}
+.festival{
+
+}
+.festival .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/festival-9.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.festival .top-title{
+    margin-top: 3em;
+}
+.festival .top-title h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.festival .title{
+    margin-top: 6em;
+    width: 80%;
+    margin: 0 auto;
+}
+.festival ul li:first-child{
+    margin-top: 1em;
+}
+.festival .text b{
+    font-weight: bold;
+    font-size: 30px;
+}
+.festival .text p{
+    text-align: center;
+}
+.festival ul{
+    padding: 0;
+    margin: 0;
+}
+.festival ul li{
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    width: 32%;
+    border-left: 2px solid #ed1c24;
+    margin: 0 auto;
+    background-color: #e8e8e8;
+    margin-top: 2em;
+}
+.festival .title h3{
+
+}
+.festival .text{
+
+}
+.festival .text p{
+    width: 65%;
+    line-height: 3em;
+}
+.festival .festival-image-1 img{
+    position: absolute;
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+    top: 9em;
+    border-radius: 5px;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+.festival .festival-image-2 img{
+    position: absolute;
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+    bottom: -5em;
+    border-radius: 5px;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+.festival-photo-gallery{
+    margin-top: 8em;
+}
+.festival-photo-gallery .image img{
+    position: relative;
+    width: 100%;
+    height: 20em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    object-fit: cover;
+    background-position: center;
+    margin-top: 3em;
+    border-radius: 5px;
+    /* border: 5px groove #ed1c24;
+    border-top-color: #3a51a2;
+    border-bottom-color: #3a51a2; */
+}
+.festival .content{
+    height: auto;
+    margin-bottom: 3em;
+}
+.guncel-haberler .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/flowers.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guncel-haberler .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.guncel-haberler .title,
+.guncel-haberler .date{
+    margin-top: 5em;
+}
+.guncel-haberler .date p{
+    text-align: right;
+    color: #949494;
+    font-weight:bold;
+    font-size: 20px;
+}
+.guncel-haberler .text p{
+    width: 100%;
+    height: auto;
+}
+.guncel-haberler .container{
+    max-width: 1100px;
+}
+.guncel-haberler .title h3{
+    text-align: left;
+    /* contain: content; */
+}
+.guncel-haberler .content{
+    height: auto;
+}
+.guncel-haberler .image{
+    margin-top: 3em;
+}
+.guncel-haberler .image img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    border-radius: 5px;
+    margin-bottom: 4em;
+}
+.guncel-haberler .other-news .card-2,
+.guncel-haberler .other-news .card{
+    position: absolute;
+    top: 5em;
+}
+.guncel-haberler .other-news .card-2{
+    top: 33em;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.guncel-haberler .btn-primary{
+    background-color: #acacac;
+    border:none
+}
+.btn:focus, .btn.focus,
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
+    background-color: #acacac !important;
+    border-color: #acacac;
+    box-shadow: none !important;
+}
+.iletisim .content{
+    height: auto;
+}
+.iletisim .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/iletisim-banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iletisim .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.iletisim .item{
+
+}
+.iletisim .item .title{
+
+}
+.iletisim .item .title h3{
+    text-align: left;
+    font-size: 20px;
+}
+.iletisim .contact-office .contact-title{
+    margin-top: 3em;
+    display: none;
+}
+.iletisim .contact-office .contact-title h3{
+    color: #161616;
+    text-align: center;
+    font-size: 18px;
+}
+.iletisim .contact-office .contact .location{
+    display: flex;
+    margin-top: 1.5em;
+}
+.iletisim .contact-office .contact .location i{
+    color:#161616;
+    padding-top: 3px;
+}
+.iletisim .contact-office .contact .location p{
+    color:#161616;
+    font-size: 15px;
+    padding-left: 15px;
+    margin: 0;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.iletisim .contact-office .contact .phone{
+    display: flex;
+    margin-top: 10px;
+}
+.iletisim .contact-office .contact .phone i{
+    color:#161616;
+    padding-top: 3px;
+}
+.iletisim .contact-office .contact .phone p{
+    color:#161616;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.iletisim .contact-office .contact .mail{
+    display: flex;
+    margin-top: 10px;
+}
+.iletisim .contact-office .contact .mail i{
+    color:#161616;
+    padding-top: 3px;
+}
+.iletisim .contact-office .contact .mail p{
+    color:#161616;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 100%;
+    /* text-align: center; */
+}
+.iletisim .maps{
+    position: relative;
+    width: 100%;
+}
+.iletisim iframe{
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+.iletisim .contact{
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 3px #e0e0e0;
+    margin-bottom: 2em;
+}
+.belediye,
+.contact-office{
+    margin: 5em 0 3em 0;
+}
+.iletisim .col-md-5{
+    padding: 0;
+    margin: 0;
+}
+.iletisim .belediye .title h3{
+    text-align: left;
+    font-size: 20px !important;
+}
+.iletisim .belediye .contact-title{margin-top: 3em;display: none;}
+.iletisim .belediye .contact-title h3{
+    color: #161616;
+    text-align: center;
+    font-size: 18px;
+}
+.iletisim .belediye .contact .location{
+    display: flex;
+    margin-top: 1.5em;
+}
+.iletisim .belediye .contact .location i{
+    color:#161616;
+    padding-top: 3px;
+}
+.iletisim .belediye .contact .location p{
+    color:#161616;
+    font-size: 15px;
+    padding-left: 15px;
+    margin: 0;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.iletisim .belediye .contact .phone{
+    display: flex;
+    margin-top: 10px;
+}
+.iletisim .belediye .contact .phone i{
+    color:#161616;
+    padding-top: 3px;
+}
+.iletisim .belediye .contact .phone p{
+    color:#161616;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.iletisim .belediye .contact .mail{
+    display: flex;
+    margin-top: 10px;
+}
+.iletisim .belediye .contact .mail i{
+    color:#161616;
+    padding-top: 3px;
+}
+.iletisim .belediye .contact .mail p{
+    color:#161616;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 100%;
+    /* text-align: center; */
+}
+.iletisim .line-red{
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    background-color: #ed1c24;;
+    bottom: -3em;
+    z-index: -1;
+}
+.iletisim .line-blue{
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    background-color: #3a51a2;
+    bottom: -7em;
+    z-index: -1;
+}
+.konaklama-tesisleri .content{
+    height: auto;
+}
+.konaklama-tesisleri .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/laguna-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.konaklama-tesisleri .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.konaklama-tesisleri .item .phone{
+
+}
+.konaklama-tesisleri .item .phone i{
+
+}
+.konaklama-tesisleri .item .card{
+    width: 100%;
+    margin-top: 3em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+.konaklama-tesisleri .item .card img{
+    object-fit: cover;
+    height: 23em;
+}
+.konaklama-tesisleri .item .card-margin{
+    margin-bottom: 3em;
+}
+.konaklama-tesisleri .hotel-logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3em;
+}
+.konaklama-tesisleri .hotel-logo img{
+    width: auto;
+    height: 15em;
+}
+.sindirgiya-ulasim{
+
+}
+.sindirgiya-ulasim .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/iletisim.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sindirgiya-ulasim .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.sindirgiya-ulasim .title{
+    margin-top: 3em;
+}
+.sindirgiya-ulasim .title h3{
+    text-align: center;
+}
+.sindirgiya-ulasim .text{
+
+}
+.sindirgiya-ulasim .text p{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.sindirgiya-ulasim .image{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.sindirgiya-ulasim .image img{
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    object-position: center;
+}
+.sindirgiya-ulasim .content{
+    height: auto;
+}
+.sindirgiya-ulasim table{
+    margin-top: 3em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    width: 100%;
+}
+
+.sindirgiya-ulasim .table{
+    overflow: scroll;
+}
+.sindirgiya-ulasim table th{
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffF;
+    padding: 15px;
+    font-size: 25px;
+}
+.sindirgiya-ulasim table tr td{
+    color:#fff;
+    font-size: 13px;
+    border:0;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3px;
+    border-right: 2px solid #000;
+}
+.sindirgiya-ulasim .table-2{
+    margin-bottom: 3em;
+    width: 100%;
+    overflow: scroll;
+}
+.sindirgiya-ulasim table tr td:last-child{
+    border-right: none;
+}
+.sindirgiya-ulasim table tbody tr:nth-child(odd){
+    background-color: #797979;
+}
+.sindirgiya-ulasim table tbody tr:nth-child(even){background-color: #212529;}
+.sindirgiya-ulasim table tbody tr:first-child{
+    background-color: #ee242c;
+}
+.sindirgiya-ulasim table tr th[colspan="1"]:nth-child(1){
+    background-color: black;
+    font-size:25px;
+}
+.sindirgiya-ulasim table tr th[colspan="1"]:nth-child(2){
+    background-color: black;
+    font-size:25px;
+}
+
+.sindirgiya-ulasim table tr th[colspan="1"]:nth-child(3){
+    background-color: white;
+    font-size:25px;
+    color: #000;
+}
+.sindirgiya-ulasim table tr th[colspan="1"]:nth-child(4){
+    background-color: white;
+    font-size:25px;
+    color: #000;
+}
+
+.sindirgiya-ulasim table tr th[colspan="1"]:nth-child(5){
+    background-color: black;
+    font-size:25px;
+}
+.sindirgiya-ulasim table tr th[colspan="1"]:nth-child(6){
+    background-color: black;
+    font-size:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sindirgiya-ulasim .contact{
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 3px #e0e0e0;
+    margin-top: 2em;
+}
+.sindirgiya-ulasim .contact .phone{
+    display: flex;
+    margin-top: 10px;
+}
+.sindirgiya-ulasim .contact .phone i{
+    color:#161616;
+    padding-top: 3px;
+}
+.sindirgiya-ulasim .contact .phone p{
+    color: #ffffff;
+    font-size: 17px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 1em;
+    border: 1px solid #797979;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 3px 3px 3px 0px #acacac;
+    background-color: #212529;
+}
+.sindirgiya-ulasim .contact-title h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tarihimiz .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/tarihimiz-banner.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+.tarihimiz .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.tarihimiz .title{
+    margin-top: 3em;
+}
+.tarihimiz .title h3{
+    text-align: center;
+}
+.tarihimiz .text{
+    margin-bottom: 3em;
+}
+.tarihimiz .text p{
+    text-align: justify;
+}
+.tarihimiz .content{
+    height: auto;
+}
+.turistik-ilgi-noktalari .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/hisaralan-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.turistik-ilgi-noktalari .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.turistik-ilgi-noktalari .title{
+    display: none;
+}
+.turistik-ilgi-noktalari .tourism-outer-text-div{
+    display: flex;
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.turistik-ilgi-noktalari .tourism-title{
+    margin-top: 5em;
+}
+.turistik-ilgi-noktalari .tourism-title h3{
+    text-transform: uppercase;
+    border-left: 2px solid #212529;
+    padding-left: 10px;
+    font-size: 35px;
+    height: 3em;
+}
+.turistik-ilgi-noktalari .tourism-text{
+}
+.turistik-ilgi-noktalari .tourism-text p{
+    text-align: justify;
+    line-height: 2.5em;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.turistik-ilgi-noktalari .image-out{
+    margin-top: 5em;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+.turistik-ilgi-noktalari .image-out .col-md-6,
+.turistik-ilgi-noktalari .image-out .col-md-12{
+    margin: 0;
+    padding: 0;
+}
+.turistik-ilgi-noktalari .image-out .image-2,
+.turistik-ilgi-noktalari .image-out .image-3{
+    /* margin-top: 2em; */
+}
+.turistik-ilgi-noktalari .image-out img{
+    position: relative;
+    width: 100%;
+    height: 15em;
+    border-top: 2px solid #fff;
+    object-fit: cover;
+    border-right: 2px solid #fff;
+}
+.turistik-ilgi-noktalari .content{
+    height: auto;
+    margin-bottom: 3em;
+}
+.turistik-ilgi-noktalari .other-page{
+    margin-top: 3em;
+}
+.turistik-ilgi-noktalari .other-page a{
+    padding: 8px 15px;
+    text-decoration: none;
+    color:#fff;
+    background-color: #ed1c24;
+    border-radius: 5px;
+}
+.turistik-ilgi-noktalari .other-page p{
+    font-size: 20px;
+    text-align: center;
+}
+.yagcibedir-halisi .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/yagcibedir-halisi-9.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yagcibedir-halisi .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.yagcibedir-halisi .text{
+
+}
+.yagcibedir-halisi .text p{
+    width: 100%;
+    line-height: 35px;
+}
+.yagcibedir-halisi .image{
+
+}
+.yagcibedir-halisi .image img{
+    margin-top: 3em;
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    border-radius: 5px;
+}
+.yagcibedir-halisi .hali-galeri{
+
+}
+.yagcibedir-halisi .hali-galeri img{
+    width: 100%;
+    height: 18em;
+    object-fit: cover;
+    margin: 3em 0 3em 0;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+    border-radius: 5px;
+}
+.yagcibedir-halisi .content{
+    height: auto;
+}
+.yapmadan-donmeyin .banner{
+    position: relative;
+    width: 100%;
+    height: 18em;
+    background: url(../images/leylek.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yapmadan-donmeyin .banner h3{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 3px 3px #333333;
+}
+.yapmadan-donmeyin .text{
+
+}
+.yapmadan-donmeyin .text p{
+    font-size: 20px;
+    text-align: center;
+}
+.yapmadan-donmeyin .image{
+
+}
+.yapmadan-donmeyin .image img{
+    margin: 8px 0 3em 0;
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    border-top: 2px solid #801d32;
+    border-bottom: 2px solid #111834;
+}
+.yapmadan-donmeyin .content{
+    height: auto;
+}
+.yapmadan-donmeyin .other-page{
+    margin: 1em 0 1em 0;
+}
+.yapmadan-donmeyin .other-page a{
+    padding: 8px 15px;
+    text-decoration: none;
+    color:#fff;
+    background-color: #ed1c24;
+    border-radius: 5px;
+}
+.yapmadan-donmeyin .other-page p{
+    font-size: 20px;
+    text-align: center;
+}
+/* LOGIN SCREEN*/
+
+
+
+.login-screen{
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 3em 0 3em 0;
+}
+.login-screen h3{
+    text-align: center;
+}
+.login-screen button{
+    margin-top: 1em;
+    border: 0;
+    background-color: #ee242c;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* .login-screen{
+    margin-bottom: 5em;
+}
+.section-header h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+.login-screen input:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.login-screen textarea:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.login-screen input{
+    font-weight: bold;
+}
+.login-screen button{
+    padding: 8px 50px;
+    background-color: #737373;
+    color:#fff;
+    border: 0;
+    border-radius: 5px;
+} */
+#contact{
+    margin-top: 14em;
+    background-color: #fff;
+}
+/* .admin-panel-header{
+    height: auto;
+}
+.admin-panel-quit{
+    margin: 1em 0 1em 0;
+}
+.admin-panel-new-news {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.admin-panel-new-news a{
+     padding: 15px 25px;
+     background-color: #801d32;
+}
+.admin-panel-quit{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.admin-panel-quit a{
+    padding: 15px 25px;
+    background-color: #3a51a2;
+}
+.admin-panel-new-news a{
+    text-decoration: none;
+}
+.admin-panel-quit p,
+.admin-panel-new-news p{
+    margin: 0;
+    color: #fff;
+}
+.admin-panel-logo{
+    margin: 1em 0 1em 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.admin-panel-logo img{
+    width: auto;
+    height: 10em;
+    object-fit: cover;
+}
+.admin-panel-title{
+    height: auto;
+    margin: 1em 0 1em 0;
+}
+
+LOGIN SCREEN */
+
+/* ADD POST SCREEN*/
+/* .add-post{
+    margin-bottom: 5em;
+} */
+.section-header h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+/* .add-post input:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.add-post textarea:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+.add-post input{
+    font-weight: bold;
+    height: auto;
+    height: 4em;
+    font-size: 15px;
+}
+.add-post textarea{
+    font-weight: bold;
+    height: 4em;
+    font-size: 20px;
+}
+.add-post button{
+    padding: 8px 50px;
+    background-color: #ff0000;
+    color:#fff;
+    border: 0;
+    border-radius: 5px;
+} */
+/* ADD POST SCREEN*/
+.posts {
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+.posts .news-title {
+    margin: 1em 0 1em 0;
+}
+
+.posts .news-title h3 {
+    color: #161616;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: left;
+}
+
+.posts .news-title-2 {width: 85%;margin: 0 auto;margin-top: 2em;}
+
+.posts .news-title-2 h3 {
+    color: #161616;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.posts .item {
+    height: 700px;
+    background: #9e9e9e38;
+    border-radius: 10px;
+    transition: .5s;
+    margin: 1em 0 3em 0;
+}
+.posts .item:hover{
+    background-color: #d0d0d0;
+}
+
+.posts .item .image {}
+
+.posts .item .image img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 50px 50px -25px #1d1d1da8;
+}
+
+.posts .item .news-description {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+.posts .item .news-description p {
+    text-align: justify;
+    font-size: 14px;
+    margin: 0;
+}
+
+.posts .item .news-description span {
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.posts .item .news-description a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: auto;
+    background: #121415;
+}
+
+footer .movie {
+    margin-top: 3em;
+}
+
+footer iframe{
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer .movie-text {}
+
+footer .movie-text h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer .movie-text span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer .movie-image {
+    padding-top: 10px;
+}
+
+footer .movie-image img {
+    position: relative;
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer .tourism {}
+
+footer .tourism-title {
+    margin-top: 3em;
+}
+
+footer .tourism-title h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+footer .tourism-text {
+    font-size: 17px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+footer .tourism-text p {
+    font-size: 15px;
+    color: #fff;
+}
+
+footer .social-media{
+    margin-top: 2em;
+}
+footer .social-media .instagram{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-media .instagram i{
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+footer .social-media .facebook{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-media .facebook i{
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+footer .social-media .twitter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer .social-media .twitter i{
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+footer .social-media a{
+    text-decoration: none;
+}
+footer .footer-logo{
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 18px; */
+}
+footer .footer-logo img{
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    opacity: 0.8;
+    /* filter: invert(100%)sepia(0)saturate(0%)hue-rotate(0deg)brightness(100%)contrast(100%); */
+}
+footer .contact{
+    /* margin-top: 2em; */
+}
+footer .contact-title{margin-top: 3em;}
+footer .contact-title h3{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+footer .contact .location{
+    display: flex;
+    margin-top: 15px;
+}
+footer .contact .location i{
+    color:#fff;
+    padding-top: 3px;
+}
+footer .contact .location p{
+    color:#fff;
+    font-size: 15px;
+    padding-left: 15px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer .contact .phone{
+    display: flex;
+    margin-top: 10px;
+}
+footer .contact .phone i{
+    color:#fff;
+    padding-top: 3px;
+}
+footer .contact .phone p{
+    color:#fff;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+footer .contact .mail{
+    display: flex;
+    margin-top: 10px;
+}
+footer .contact .mail i{
+    color:#fff;
+    padding-top: 3px;
+}
+footer .contact .mail p{
+    color:#fff;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 100%;
+    text-align: center;
+}
+footer .contact .sindirgi-logo img{
+    position: relative;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 150px;
+    filter: invert(100%)sepia(0)saturate(0%)hue-rotate(0deg)brightness(100%)contrast(100%);
+    margin-top: 55px;
+    opacity: 0.8;
+    padding-left: 2em;
+}
+footer .footer-bottom{
+    display: flex;
+    align-items: center;
+    background-color: #101010;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    justify-content: center;
+}
+footer .footer-bottom p{
+    color:#fff;
+    margin: 0;
+}
+
+/* SWIPER */
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 700px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* SWIPER */
+.post{
+  margin-top: 3em;
+  height: auto;
+}
+.homepageimg{
+  width: 100%;
+  height: 50em;
+  object-fit: cover;
+  margin-bottom: 3em
+}
+.news{
+  height: auto;
+}
+
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width:1680px){
+    .content .right-menu ul li a,
+    .content .left-menu ul li a{
+        font-size: 17px;
+    }
+    .content .text p{
+        width: 80%;
+    }
+    .baskanin-mesaji .text p {
+        width: 95%;
+    }
+    .section-1{
+        height: 40.5em;
+    }
+    .festival .content .text p,
+    .festival .title{
+        width: 59%;
+    }
+
+}
+@media only screen and (max-width:1440px){
+    .content .right-menu ul li a,
+    .content .left-menu ul li a{
+        font-size: 14px;
+    }
+    .content .right-menu ul li,
+    .content .left-menu ul li{
+        height: 60px;
+    }
+    .content .text p{
+        font-size: 15px;
+        width: 85%;
+    }
+    .baskanin-mesaji .text p{
+        width: 100%;
+    }
+    .baskanin-mesaji .container{
+        max-width: 1280px;
+    }
+    .baskanin-mesaji .image img{
+        height: 35em;
+    }
+    .slider h5{
+        font-size: 30px;
+    }
+    .slider p{
+        font-size: 25px;
+    }
+    .festival .content .text p, .festival .title{
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .container{
+        max-width: 1200px;
+    }
+    header .text p{
+        font-size: 20px;
+    }
+    header .bakanlik-logo img{
+        height: 120px;
+    }
+    .slider{
+        height: 500px;
+    }
+    .slider img{
+        height: 500px;
+    }
+    .slider h5{
+        font-size: 30px;
+    }
+    .slider p{
+        font-size: 20px;
+    }
+    .content .text p{
+        width: 90%;
+    }
+    .content .left-menu ul li a{
+        font-size: 14px;
+    }
+    .content .right-menu ul li a{
+        font-size: 14px;
+    }
+    .section-1{
+        height: 40em;
+    }
+    .section-2{
+        height: 750px;
+    }
+    .content .carpet-bg{
+        height: 750px;
+    }
+    .content .carpet-details-text{
+        height: 628px;
+    }
+    .section-mayor .mayor-text-0 p{
+        font-size: 14px;
+    }
+    .section-mayor .mayor-image img{
+        height: 530px;
+    }
+    .section-mayor .mayor-bg{
+        height: 105px;
+    }
+    .section-mayor .mayor-bg{
+        padding-top: 22px;
+    }
+    .section-mayor .mayor-bg P{
+        font-size: 19px;
+    }
+    .section-mayor .mayor-bg{
+        top: 26em;
+    }
+    .section-3{
+        margin-top: -3em;
+    }
+    .section-4{
+        height: auto;
+    }
+    .content .section-3 .festival-bg img{
+        height: 160px;
+    }
+    .content .section-3 .festival-text p{
+        padding-top: 110px;
+    }
+    footer{
+        margin-top: 1em;
+    }
+    .content .carpet .title{
+        margin-top: 2em;
+    }
+    .content .carpet .title h3{
+        font-size: 30px;
+    }
+    footer .footer-logo img{
+        height: 125px;
+    }
+    footer .contact .sindirgi-logo img{
+        height: 135px;
+    }
+    .baskanin-mesaji .text p{
+        width: 100%;
+    }
+    .baskanin-mesaji .container{
+        max-width: 1180px;
+    }
+    .baskanin-mesaji .image img{
+        height: 38em;
+    }
+}
+@media only screen and (max-width:1211px){
+    header .text p{
+        font-size:19px;
+    }
+    .turistik-ilgi-noktalari .container{
+        max-width: 1000px ;
+    }
+    .iletisim .container{
+        max-width: 1000px;
+    }
+    .baskanin-mesaji .container{
+        max-width: 1070px;
+    }
+    .baskanin-mesaji .image img{
+        height: 41em;
+    }
+    .festival .festival-image-2 img,
+    .festival .festival-image-1 img{
+        display: none;
+    }
+    .festival .content .text p, .festival .title{
+        width: 90%;
+    }
+    .festival-photo-gallery{
+        margin-top: 0;
+    }
+    .festival ul li{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:1171px){
+    header .text p{
+        font-size:18px;
+    }
+    header .menu ul li a{
+        font-size: 13px;
+    }
+    .content .left-menu ul li a{
+        padding-left: 5em;
+    }
+    .yapmadan-donmeyin .container{
+        max-width: 1050px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .container{
+        max-width: 960px;
+    }
+    header{
+        height: 11em;
+    }
+    header .bakanlik-logo img{
+        height: 85px;
+    }
+    header .sindirgi-logo img{
+        height: 95px;
+    }
+    header .text p{
+        font-size: 14px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        width: 25%;
+    }
+    .section-1{
+        height: 50em;
+    }
+    .content .left-menu ul li a{
+        padding-left: 3em;
+    }
+    .section-mayor .mayor-text-0 p{
+        font-size: 13px;
+    }
+    .section-mayor .mayor-image img{
+        height: 53em;
+    }
+    .section-3{
+        margin-top: 3em;
+    }
+    .section-mayor .mayor-bg{
+        top: 47em;
+    }
+    .section-4 .news-title h3{
+        font-size: 17px;
+    }
+    .content .carpet-details-text{
+        height: 628px;
+    }
+    .section-4 .item .image img{
+        height: 245px;
+    }
+    .section-4 .news-title-2 h3{
+        font-size: 17px;
+    }
+    .swiper-container,
+    .section-4 .item{
+        height: 530px;
+    }
+    footer .footer-logo img{
+        height: 105px;
+    }
+    .turistik-ilgi-noktalari .container{
+        max-width: 800px ;
+    }
+    .turistik-ilgi-noktalari .tourism-text p{
+        font-size: 14px;
+    }
+    .iletisim .line-red,
+    .iletisim .line-blue{
+        display: none;
+    }
+    .iletisim .container{
+        max-width: 900px;
+    }
+    .yapmadan-donmeyin .container{
+        max-width: 920px;
+    }
+    .baskanin-mesaji .container{
+        max-width: 900px;
+    }
+    .baskanin-mesaji .image img{
+        height: 46em;
+    }
+
+}
+@media only screen and (max-width:991px){
+    .header-out{
+        display: none;
+    }
+    .responsive-menu{
+        display: block !important;
+    }
+    .responsive-menu .responsive-logo{
+        display: flex;
+        width: 100%;
+        height: 11em;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+    .responsive-menu .responsive-logo img{
+        width: 100%;
+        height: 7em;
+        object-fit: contain;
+    }
+    .responsive-menu .responsive-menu-icon{
+        display: flex;
+        width: 100%;
+        height: 11em;
+        justify-content: flex-end;
+        position: relative;
+        right: 3em;
+        align-items: center;
+        z-index: 0;
+    }
+    .responsive-menu .responsive-menu-icon i{
+        font-size: 3em;
+        color: #404040;
+        border: 2px solid #404040;
+        padding: 5px 8px;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 5px 5px #90909070;
+        transition: .3s;
+    }
+    .responsive-menu .responsive-menu-content{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0px 0 25px 10px #3a51a2;
+        height: 100%;
+    }
+    .class{
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 999;
+    }
+    .header-class{
+        width: 100%;
+        /* position: fixed; */
+        display: block;
+        z-index: 999;
+    }
+    .responsive-menu .responsive-menu-content ul {
+        list-style: none;
+        padding: 0;
+}
+    .responsive-menu .responsive-menu-content ul li {
+
+    }
+    .responsive-menu .responsive-menu-content ul li a{
+        color: #3a51a2;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .responsive-menu .responsive-menu-content ul li p{
+        text-align: center;
+        color: #ffffff;
+        margin-top: 3em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-size: 30px;
+        background: #3a51a2;
+        box-shadow: 0px 10px 14px -5px #000000bf;
+    }
+    .responsive-menu .responsive-menu-content-logo img{
+        position: relative;
+        width: 100%;
+        height: 10em;
+        object-fit: contain;
+        top: 2em;
+    }
+    .responsive-menu .responsive-menu-content-close{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 5em;
+    }
+    .responsive-menu .responsive-menu-content-close i{
+        font-size: 3em;
+        border: 3px solid #404040;
+        border-radius: 10px;
+        padding: 5px 15px;
+        color: #404040;
+        cursor: pointer;
+        box-shadow: 5px 5px #90909070;
+        transition: .3s;
+    }
+    .content .text p{
+        width: 100%;
+    }
+    .content .left-menu ul li a{
+        padding-left: 2em;
+    }
+    .section-1{
+        height: 47em;
+    }
+    .section-mayor{
+        height: auto;
+    }
+    .tarihimiz .container{
+        max-width: 850px;
+    }
+    .tarihimiz .banner{
+        height: 12em;
+    }
+    .iletisim .container{
+        max-width: 800px;
+    }
+    .sindirgiya-ulasim .container{
+        max-width: 920px;
+    }
+}
+@media only screen and (max-width:768px){
+    .responsive-menu .responsive-menu-content ul li p{
+        font-size: 35px;
+    }
+    .content .left-menu ul li a{
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .content .right-menu ul li a{
+        font-size: 12px;
+    }
+    .content .right-menu ul li a{
+        padding-left: 15px;
+    }
+    .section-1{
+        height: 57em;
+    }
+    .section-3{
+        margin-top: 7em;
+    }
+    .content .carpet-details-text{
+        height: 620px;
+    }
+    .content .carpet-details-text span{
+        font-size: 35px;
+    }
+    .content .carpet-details-text p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-mayor .mayor-image img{
+        margin-top: 4em;
+    }
+    .section-mayor .mayor-bg{
+        top: 52em;
+    }
+    footer .contact .mail p,
+    footer .contact .phone p,
+    footer .contact .location p,
+    footer .tourism-text p{
+        font-size: 13px;
+    }
+    footer .social-media{
+        margin-top: 0;
+    }
+    footer .contact .sindirgi-logo img{
+        margin-top: 45px;
+    }
+    footer .footer-logo img{
+        height: 90px;
+    }
+    .iletisim .container{
+        max-width: 730px;
+    }
+    .konaklama-tesisleri .col-md-5,
+    .konaklama-tesisleri .col-md-2{
+        padding: 0;
+        margin: 0;
+    }
+    .konaklama-tesisleri .container{
+        max-width: 730px;
+    }
+    .baskanin-mesaji .title,
+    .baskanin-mesaji .image{
+        margin-top: 3em;
+    }
+
+}
+@media only screen and (max-width:767px){
+    .responsive-menu .col-md-6{
+        position:absolute;
+    }
+    .responsive-menu .responsive-logo{
+        width: 48%;
+    }
+    .content .text p{
+        width: 95%;
+    }
+    .section-1{
+        box-shadow: none;
+    }
+    .section-2{
+        margin-top: 11em;
+    }
+    .content .right-menu ul li{
+        margin-top: 1em;
+    }
+    .content .right-menu{
+        margin: 0;
+    }
+    .content .left-menu{
+        margin-top: 2em;
+    }
+    .content .left-menu ul li{
+        margin-top: 1em;
+        border-radius: 0 !important;
+    }
+    .content .right-menu ul li{
+        margin-top: 2em;
+        border-radius: 0 !important;
+    }
+    .content .left-menu ul li a{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .content .right-menu ul li a{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .content .title{
+        margin-top: 1em;
+    }
+    .content .carpet-details-text p{
+        font-size: 30px;
+    }
+    .section-mayor .mayor-title-0{
+        margin-top: 2em;
+    }
+    .section-mayor .mayor-title-0 h3{
+        text-align: center;
+    }
+    .section-mayor .mayor-bg{
+        top: 45em;
+        width: 96%;
+    }
+    .section-3{
+        margin-top: 15em;
+    }
+    .section-mayor .mayor-image{
+
+    }
+    .section-mayor .mayor-image img{
+        object-fit: cover;
+        height: 440px;
+        border-radius: 5px;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .section-mayor .mayor-bg p{
+        text-align: center;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        width: 30%;
+    }
+    footer iframe{
+        width: 80%;
+    }
+    footer .movie-image{
+        display: flex;
+        justify-content: center;
+    }
+    footer .tourism-text p{
+        text-align: center;
+    }
+    footer .social-media .facebook i,
+    footer .social-media .twitter i,
+    footer .social-media .instagram i{
+        font-size: 50px;
+    }
+    footer .social-media .col-md-4{
+        width: 33.3%;
+    }
+    footer .contact p{
+        padding: 0;
+    }
+    footer .contact .location i{
+        position: absolute;
+        left: 11em;
+    }
+    footer .contact .phone i{
+        position: absolute;
+        left: 19em;
+    }
+    footer .contact .mail i{
+        position: absolute;
+        left: 16.8em;
+    }
+    footer .footer-logo img{
+        height: 140px;
+    }
+    footer .contact .sindirgi-logo img{
+        padding-left: 0;
+    }
+    footer .tourism-title h3,
+    footer .movie-text h3{
+        font-size: 25px;
+    }
+    .responsive-menu .responsive-menu-content-close i:hover{
+        box-shadow: 7px 7px #90909070;
+    }
+    .responsive-menu .responsive-menu-icon i:hover{
+        box-shadow: 7px 7px #90909070;
+    }
+    .content .right-menu ul li a,
+    .content .left-menu ul li a{
+        font-size: 17px;
+    }
+    footer .contact .sindirgi-logo img{
+        height: 150px;
+        margin: 1em 0 1em 0;
+    }
+    footer .contact-title{
+        margin-top: 0em;
+    }
+    footer .contact .mail p, footer .contact .phone p, footer .contact .location p, footer .tourism-text p{
+        font-size: 15px;
+    }
+    footer .social-media{
+        margin-top: 3em;
+    }
+    footer .footer-logo{
+        margin: 1em 0 1em 0;
+    }
+    .turistik-ilgi-noktalari .title{
+        margin-top: 3em;
+    }
+    .turistik-ilgi-noktalari .container{
+        max-width: 700px;
+    }
+    .turistik-ilgi-noktalari .col-md-6{
+        width: 50%;
+    }
+    .turistik-ilgi-noktalari .tourism-text p{
+        font-size: 13px;
+    }
+    .turistik-ilgi-noktalari .banner h3{
+        font-size: 45px;
+    }
+    .tarihimiz .banner h3{
+        font-size: 45px;
+    }
+    .iletisim .container{
+        max-width: 600px;
+    }
+    .iletisim .line-red,
+    .iletisim .line-blue{
+        display: none;
+    }
+    .iletisim .banner h3{
+        font-size: 45px;
+    }
+    .konaklama-tesisleri .card{
+        width: 85% !important;
+        margin: 0 auto;
+    }
+    .konaklama-tesisleri .banner h3{
+        font-size: 45px;
+    }
+    .yapmadan-donmeyin .container{
+        max-width: 650px;
+    }
+    .yapmadan-donmeyin .image img{
+        clip-path: polygon(12% 0, 100% 0, 88% 100%, 0% 100%);
+    }
+    .yapmadan-donmeyin .banner h3{
+        font-size: 45px;
+    }
+    .baskanin-mesaji .text p{
+        width: 100%;
+    }
+    .baskanin-mesaji .container{
+        max-width: 700px
+    }
+    .baskanin-mesaji .banner h3{
+        font-size: 45px;
+    }
+    .festival ul li{
+        width: 70%;
+    }
+    .sindirgiya-ulasim .banner h3{
+        font-size: 45px;
+    }
+    .yagcibedir-halisi .banner h3{
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width:414px){
+    .container{
+        max-width: 900px;
+    }
+    .responsive-menu .responsive-menu-icon{
+        right: 1.5em;
+    }
+    .responsive-menu .responsive-menu-content-close{
+        margin-top: 3em;
+    }
+    .responsive-menu .responsive-menu-content ul li p{
+        margin-top: 55px;
+    }
+    .slider img,
+    .slider{
+        height: 300px;
+    }
+    .slider .d-none{
+        display: block !important;
+    }
+    .slider h5{
+        font-size: 25px;
+    }
+    .slider p{
+        font-size: 15px;
+    }
+    .content .left-menu ul li a{
+        font-size: 18px;
+    }
+    .content .right-menu ul li a{
+        font-size: 18px;
+    }
+    .content .text p{
+        width: 90%;
+    }
+    .section-1{
+        height: auto;
+    }
+    .section-2{
+        height: 575px;
+        margin-top: 0;
+    }
+    .section-mayor{
+        height: auto;
+    }
+    .section-3{
+        margin-top: 11em;
+    }
+    .section-4 .news-title h3,
+    .section-4 .news-title-popular h3{
+        text-align: center;
+    }
+    .section-mayor .mayor-text-0 p{
+        font-size: 15px;
+    }
+    .content .carpet-details-text{
+        height: 585px;
+    }
+    .content .carpet-bg{
+        height: 580px;
+    }
+    .content .carpet-details-text p{
+        font-size: 35px;
+        text-align: center;
+    }
+    .content .carpet-details-text{
+        height: 415px;
+    }
+    .section-mayor .mayor-bg{
+        top: 89em;
+    }
+    .section-mayor .mayor-title-0 h3{
+        font-size: 30px;
+    }
+    .content .section-3 .festival-bg img{
+        object-position: center;
+    }
+    .content .section-3 .festival-text p{
+        padding-right: 0;
+        text-align: center;
+        padding-top: 100px;
+    }
+    footer .social-media{
+        margin-top: 3em;
+    }
+    footer .footer-logo{
+        margin-top: 2em;
+    }
+    footer .contact .phone{
+        display: block;
+    }
+    footer .contact .mail p, footer .contact .phone p, footer .contact .location p, footer .tourism-text p{
+        padding-left: 0;
+    }
+    footer .contact .location {
+        width: 80%;
+        margin: 0 auto;
+    }
+    footer .contact .location i{
+        left: 3.5em;
+    }
+    footer .contact .phone i{
+        left: 6.5em;
+    }
+    footer .contact .mail i{
+        left: 5.5em;
+    }
+    footer .contact .sindirgi-logo img{
+        margin: 2em 0 2em 0;
+    }
+    footer .tourism-title h3, footer .movie-text h3{
+        font-size: 28px;
+    }
+    footer .contact .mail p, footer .contact .phone p, footer .contact .location p, footer .tourism-text p{
+        font-size: 16px;
+    }
+    .turistik-ilgi-noktalari .title{
+        margin-top: 2em;
+    }
+    .turistik-ilgi-noktalari .tourism-title{
+        margin-top: 2em;
+    }
+    .konaklama-tesisleri .banner,
+    .yapmadan-donmeyin .banner,
+    .tarihimiz .banner,
+    .sindirgiya-ulasim .banner,
+    .yagcibedir-halisi .banner,
+    .baskanin-mesaji .banner,
+    .turistik-ilgi-noktalari .banner{
+        height: 12em;
+    }
+    .turistik-ilgi-noktalari .banner h3{
+        font-size: 30px;
+    }
+    .turistik-ilgi-noktalari .tourism-title h3{
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+        height: auto;
+    }
+    .turistik-ilgi-noktalari .image-out{
+        margin-top: 0em;
+        box-shadow: none;
+    }
+    .turistik-ilgi-noktalari .image-out img{
+        height: 13em;
+        width: 70%;
+        margin-top: 1em;
+        border-radius: 5px;
+    }
+    .turistik-ilgi-noktalari .col-md-6{
+        width: 100%;
+    }
+    .turistik-ilgi-noktalari .row:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    .turistik-ilgi-noktalari .row:nth-child(5){
+        flex-direction: column-reverse;
+    }
+    .turistik-ilgi-noktalari .row:nth-child(7){
+        flex-direction: column-reverse;
+    }
+    .turistik-ilgi-noktalari .row:nth-child(9){
+        flex-direction: column-reverse;
+    }
+    .turistik-ilgi-noktalari .image-out a{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .tarihimiz .banner h3{
+        font-size: 30px;
+    }
+    .sindirgiya-ulasim .banner h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .content .text p{
+        font-size: larger;
+    }
+    .iletisim .container{
+        max-width: 350px;
+    }
+    .iletisim .belediye, .iletisim .contact-office{
+        margin: 3em 0 0 0;
+    }
+    .iletisim .banner{
+        height: 12em;
+    }
+    .iletisim .banner h3{
+        font-size: 30px;
+    }
+    .konaklama-tesisleri .hotel-logo:first-child{
+        margin-top: 3em;
+    }
+    .konaklama-tesisleri .hotel-logo{
+        margin-top: 0;
+    }
+    .konaklama-tesisleri .hotel-logo img{
+        height: 9em;
+    }
+    .konaklama-tesisleri .banner h3{
+        font-size: 30px;
+    }
+    .yapmadan-donmeyin .text p{
+        width: 100%;
+    }
+    .yapmadan-donmeyin .banner h3{
+        font-size: 30px;
+    }
+    .baskanin-mesaji .text p{
+        width: 100%;
+    }
+    .baskanin-mesaji .image img{
+        height: 30em;
+    }
+    .baskanin-mesaji .title h3{
+        text-align: center;
+    }
+    .baskanin-mesaji .banner h3{
+        font-size: 30px;
+    }
+    .festival ul li{
+        width: 100%;
+    }
+    .yagcibedir-halisi .banner h3{
+        font-size: 30px;
+    }
+    .yagcibedir-halisi .banner{
+        background-position: bottom;
+    }
+}
+@media only screen and (max-width:411px){
+    .konaklama-tesisleri .item .card{
+        width: 75%;
+    }
+    .responsive-menu .responsive-menu-content ul li p{
+        margin-top: 80px;
+    }
+    .section-mayor .mayor-bg{
+        top: 91em;
+    }
+}
+@media only screen and (max-width:375px){
+    .responsive-menu .responsive-menu-content ul li p{
+        margin-top: 40px;
+    }
+    .turistik-ilgi-noktalari .banner h3{
+        font-size: 28px;
+    }
+    .content .title h3{
+        font-size: 25px;
+    }
+    .content .carpet-details-text p{
+        font-size: 33px;
+    }
+    .content .carpet-details-text{
+        height: 380px;
+    }
+    .section-mayor .mayor-bg{
+        top: 96em;
+    }
+    footer .contact .location i{
+        left: 2.5em;
+    }
+    footer .contact .phone i{
+        left: 5.5em;
+    }
+    footer .contact .mail i{
+        padding-top: 5px;
+        left: 4.5em;
+    }
+    .iletisim .banner h3{
+        font-size: 28px;
+    }
+    .konaklama-tesisleri .banner h3{
+        font-size: 28px;
+    }
+    .yapmadan-donmeyin .banner h3{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:360px){
+    .turistik-ilgi-noktalari .banner h3{
+        font-size: 24px;
+    }
+    .content .title h3{
+        font-size: 21px;
+    }
+    .tarihimiz .banner h3{
+        font-size: 28px;
+    }
+    .iletisim .container{
+        max-width: 300px;
+    }
+    footer .contact .location i{
+        left: 2em;
+    }
+    footer .contact .phone i{
+        left: 5em;
+    }
+    footer .contact .mail i{
+        left: 4em;
+    }
+}
+@media only screen and (max-width:320px){
+    .iletisim .container{
+        max-width: 280px;
+    }
+    .yapmadan-donmeyin .text p{
+        font-size: 16px;
+    }
+    footer .contact .phone i{
+        left: 3.5em;
+    }
+    footer .contact .mail i{
+        left: 2.5em;
+    }
+    .section-mayor .mayor-bg{
+        top: 106em;
+    }
+}
+
+/* MEDIA SCREEN */
