@@ -110,8 +110,8 @@
                 <div class="right-menu">
                     <ul>
                         <li><a href="{{route('tarihimiz')}}">sındırgı tarİhİ</a></li>
-                        <li><a href="x">ulaşım</a></li>
-                        <li><a href="x">sındırgı'da ne yenir</a></li>
+                        <li><a href="{{route('ulasim')}}">ulaşım</a></li>
+                        <li><a href="{{route('sindirgidaNeYenir')}}">sındırgı'da ne yenir</a></li>
                     </ul>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                             <h3>Dünyaca Ünlü Yağcıbedİr Halıları</h3>
                         </div>
                         <div class="carpet-text">
-                            <p><a href="xxx">detaylı bilgi için tıklayınız</a></p>
+                            <p><a href="{{route('yagcibedirHalisi')}}">detaylı bilgi için tıklayınız</a></p>
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
                     <img src="{{asset('front/')}}/images/festival logo.png">
                 </div>
                 <div class="festival-text">
-                    <p><a href="xxx">detaylı bilgi için tıklayınız</a></p>
+                    <p><a href="{{route('festival')}}">detaylı bilgi için tıklayınız</a></p>
                 </div>
             </div>
         </div>

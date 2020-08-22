@@ -1,5 +1,5 @@
-<?php $this->load->view('include/header') ?>
-<?php $this->load->view('include/nav') ?>
+@include('front.layouts.header')
+@include('front.layouts.nav')
 
 
 <div class="baskanin-mesaji">
@@ -532,8 +532,8 @@
 
 
 
+@include('front.layouts.footer')
 
-<?php $this->load->view('include/footer') ?>
 
 
 <!-- <tr>

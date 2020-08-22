@@ -1,6 +1,5 @@
-<?php $this->load->view('include/header') ?>
-<?php $this->load->view('include/nav') ?>
-
+@include('front.layouts.header')
+@include('front.layouts.nav')
 
 
     <!-- <div class="page-load-outer">
@@ -23,7 +22,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="festival-image-1">
-                        <img src="<?php echo base_url(); ?>assets/frontend/images/selale.jpg">
+                        <img src="{{asset('front/')}}/images/selale.jpg">
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -72,7 +71,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="festival-image-2">
-                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-10.jpg">
+                        <img src="{{asset('front/')}}/images/festival-10.jpg">
                     </div>
                 </div>
             </div>
@@ -83,17 +82,17 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="image">
-                                <a href="<?php echo base_url(); ?>assets/frontend/images/festival-2.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                    <img src="<?php echo base_url(); ?>assets/frontend/images/festival-2.jpg" />
+                                <a href="{{asset('front/')}}/images/festival-2.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                    <img src="{{asset('front/')}}/images/festival-2.jpg" />
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="image-2">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-3.jpg" data-fancybox="gallery"
+                                    <a href="{{asset('front/')}}/images/festival-3.jpg" data-fancybox="gallery"
                                         data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-3.jpg" />
+                                        <img src="{{asset('front/')}}/images/festival-3.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -101,8 +100,8 @@
                         <div class="col-md-3">
                             <div class="image-3">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-1.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-4.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-4.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -112,8 +111,8 @@
                         <div class="col-md-2">
                             <div class="image-4">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-5.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-5.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-5.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-5.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -121,8 +120,8 @@
                         <div class="col-md-5">
                             <div class="image-5">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-6.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-6.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-6.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-6.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -130,8 +129,8 @@
                         <div class="col-md-5">
                             <div class="image-6">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-7.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-7.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-7.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-7.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -140,16 +139,16 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="image">
-                                <a href="<?php echo base_url(); ?>assets/frontend/images/festival-8.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                    <img src="<?php echo base_url(); ?>assets/frontend/images/festival-8.jpg" />
+                                <a href="{{asset('front/')}}/images/festival-8.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                    <img src="{{asset('front/')}}/images/festival-8.jpg" />
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="image-2">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-9.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-9.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-9.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-9.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -157,8 +156,8 @@
                         <div class="col-md-3">
                             <div class="image-3">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-10.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-10.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-10.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-10.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -168,8 +167,8 @@
                         <div class="col-md-2">
                             <div class="image-4">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-11.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-11.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-11.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-11.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -177,8 +176,8 @@
                         <div class="col-md-5">
                             <div class="image-5">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-12.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-12.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-12.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-12.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -186,8 +185,8 @@
                         <div class="col-md-5">
                             <div class="image-6">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-13.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-13.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-13.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-13.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -196,16 +195,16 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="image">
-                                <a href="<?php echo base_url(); ?>assets/frontend/images/festival-14.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                    <img src="<?php echo base_url(); ?>assets/frontend/images/festival-14.jpg" />
+                                <a href="{{asset('front/')}}/images/festival-14.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                    <img src="{{asset('front/')}}/images/festival-14.jpg" />
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="image-2">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-15.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-15.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-15.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-15.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -213,8 +212,8 @@
                         <div class="col-md-3">
                             <div class="image-3">
                                 <div class="image">
-                                    <a href="<?php echo base_url(); ?>assets/frontend/images/festival-16.jpg" data-fancybox="gallery" data-caption="Caption #1">
-                                        <img src="<?php echo base_url(); ?>assets/frontend/images/festival-16.jpg" />
+                                    <a href="{{asset('front/')}}/images/festival-16.jpg" data-fancybox="gallery" data-caption="Caption #1">
+                                        <img src="{{asset('front/')}}/images/festival-16.jpg" />
                                     </a>
                                 </div>
                             </div>
@@ -227,4 +226,4 @@
     </div>
 
 
-    <?php $this->load->view('include/footer') ?>
+    @include('front.layouts.footer')

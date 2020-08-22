@@ -28,4 +28,19 @@ class HomepageController extends Controller
     public function yapmadanDonmeyin(){
       return view('front.yapmadan-donmeyin');
     }
+    public function yapmadanDonmeyin2(){
+      return view('front.yapmadan-donmeyin-2');
+    }
+    public function ulasim(){
+      return view('front.sindirgiya-ulasim');
+    }
+    public function sindirgidaNeYenir(){
+      return view('front.sindirgidaneyenir');
+    }
+    public function yagcibedirHalisi(){
+      return view('front.yagcibedir-halisi');
+    }
+    public function festival(){
+      return view('front.festival');
+    }
 }

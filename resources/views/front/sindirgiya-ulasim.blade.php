@@ -1,5 +1,5 @@
-<?php $this->load->view('include/header') ?>
-<?php $this->load->view('include/nav') ?>
+@include('front.layouts.header')
+@include('front.layouts.nav')
 
 
 <!-- <div class="page-load-outer">
@@ -278,5 +278,4 @@
     </div>
 </div>
 
-
-<?php $this->load->view('include/footer') ?>
+@include('front.layouts.footer')
