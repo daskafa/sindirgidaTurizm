@@ -262,16 +262,16 @@
                             <div class="item">
                                 <div class="image-bg">
                                     <div class="image">
-                                        {{-- <img src="<?php echo base_url('uploads/ArticleImages/') . $bilgi->ImageUrl; ?>"> --}}
+                                        <img src="{{asset('front/')}}/images/mayor.jpg">
                                     </div>
                                 </div>
                                 <div class="news-text">
                                     <div class="news-title-2">
-                                        {{-- <h3> <?php echo $bilgi->duyurubaslik; ?> </h3> --}}
+                                        <h3> başlık başlık başlık başlık başlık başlık başlık başlık</h3>
                                     </div>
                                     <div class="news-description">
-                                        {{-- <p><?php echo kisalt($bilgi->duyuruaciklama); ?><br><br> --}}
-                                          {{-- <a href="<?php echo base_url('duyurular/'); echo $bilgi->duyurulink; ?>"><span style="color: #fff; background-color: #4c4c4c;border-radius: 5px;padding: 10px;">İlgili haberi görmek için tıklayınız</span></a>--}}
+                                        <p>description description description description description description description description description description description description description description description description description description<br><br>
+                                          <a href="xxx"><span style="color: #fff; background-color: #4c4c4c;border-radius: 5px;padding: 10px;">İlgili haberini görmek için tıklayınız</span></a>
                                         </p>
                                     </div>
                                 </div>
