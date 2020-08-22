@@ -22,4 +22,10 @@ class HomepageController extends Controller
     public function iletisim(){
       return view('front.iletisim');
     }
+    public function konaklamaTesisleri(){
+      return view('front.konaklama-tesisleri');
+    }
+    public function yapmadanDonmeyin(){
+      return view('front.yapmadan-donmeyin');
+    }
 }

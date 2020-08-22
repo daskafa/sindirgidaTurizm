@@ -19,3 +19,6 @@ Route::get('/GezilecekYerler', 'Front\HomepageController@gezilecekYerler')->name
 Route::get('/GezilecekYerler2', 'Front\HomepageController@gezilecekYerler2')->name('gezilecekYerler2');
 Route::get('/Tarihimiz', 'Front\HomepageController@tarihimiz')->name('tarihimiz');
 Route::get('/İletisim', 'Front\HomepageController@iletisim')->name('iletisim');
+Route::get('/KonaklamaTesisleri', 'Front\HomepageController@konaklamaTesisleri')->name('konaklamaTesisleri');
+Route::get('/YapmadanDonmeyin', 'Front\HomepageController@yapmadanDonmeyin')->name('yapmadanDonmeyin');
+// Route::get('/YapmadanDonmeyin2', 'Front\HomepageController@yapmadanDonmeyin2')->name('yapmadanDonmeyin2');

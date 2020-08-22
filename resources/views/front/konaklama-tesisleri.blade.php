@@ -1,5 +1,5 @@
-<?php $this->load->view('include/header') ?>
-<?php $this->load->view('include/nav') ?>
+@include('front.layouts.header')
+@include('front.layouts.nav')
 
 <!-- <div class="page-load-outer">
         <div class="page-load">
@@ -23,7 +23,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/belediye-oteli.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/belediye-oteli.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Sındırgı Belediye Oteli</h5>
                             </div>
@@ -41,7 +41,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/muzehan-3.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/muzehan-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Kışla Müzehan</h5>
                             </div>
@@ -58,7 +58,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="hotel-logo">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/belediye-logo.png">
+                            <img src="{{asset('front/')}}/images/belediye-logo.png">
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/emendere-termal-1.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/emendere-termal-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Eman Termal Otel</h5>
                             </div>
@@ -85,7 +85,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/laguna-3.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/laguna-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Laguna Termal Otel</h5>
                             </div>
@@ -102,7 +102,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="hotel-logo">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/sindirgi-logo.png">
+                            <img src="{{asset('front/')}}/images/sindirgi-logo.png">
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/obam-3.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/obam-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Obam Termal Otel</h5>
                             </div>
@@ -129,7 +129,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/ogretmenevi.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/ogretmenevi.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Sındırgı Öğretmenevi</h5>
                             </div>
@@ -146,7 +146,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="hotel-logo">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/belediye-logo.png">
+                            <img src="{{asset('front/')}}/images/belediye-logo.png">
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/hotel.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/hotel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Şafak Pansiyon </h5>
                             </div>
@@ -173,7 +173,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/hotel.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/hotel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Küçük Pansiyon</h5>
                             </div>
@@ -190,7 +190,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="hotel-logo">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/sindirgi-logo.png">
+                            <img src="{{asset('front/')}}/images/sindirgi-logo.png">
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/hotel.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/hotel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Çetin Pansiyon</h5>
                             </div>
@@ -217,7 +217,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/hotel.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/hotel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Güneş Pansiyon</h5>
                             </div>
@@ -234,7 +234,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="hotel-logo">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/belediye-logo.png">
+                            <img src="{{asset('front/')}}/images/belediye-logo.png">
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/hotel.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/hotel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Kocadağ Pansiyon</h5>
                             </div>
@@ -261,7 +261,7 @@
                 <div class="col-md-5">
                     <div class="item">
                         <div class="card card-margin">
-                            <img src="<?php echo base_url(); ?>assets/frontend/images/hotel.jpg" class="card-img-top" alt="...">
+                            <img src="{{asset('front/')}}/images/hotel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Altınöz Pansiyon</h5>
                             </div>
@@ -278,5 +278,4 @@
     </div>
 </div>
 
-
-<?php $this->load->view('include/footer') ?>
+@include('front.layouts.footer')

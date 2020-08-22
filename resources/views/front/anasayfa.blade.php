@@ -64,9 +64,9 @@
             <div class="col-md-3">
                 <div class="left-menu">
                     <ul>
-                        <li><a href="x">turİstİk İlgİ noktaları</a></li>
-                        <li><a href="x">konaklama tesİslerİ</a></li>
-                        <li><a href="x">yapmadan dönmeyİn</a></li>
+                        <li><a href="{{route('gezilecekYerler')}}">turİstİk İlgİ noktaları</a></li>
+                        <li><a href="{{route('konaklamaTesisleri')}}">konaklama tesİslerİ</a></li>
+                        <li><a href="{{route('yapmadanDonmeyin')}}">yapmadan dönmeyİn</a></li>
                     </ul>
                 </div>
             </div>
@@ -109,7 +109,7 @@
             <div class="col-md-3">
                 <div class="right-menu">
                     <ul>
-                        <li><a href="x">sındırgı tarİhİ</a></li>
+                        <li><a href="{{route('tarihimiz')}}">sındırgı tarİhİ</a></li>
                         <li><a href="x">ulaşım</a></li>
                         <li><a href="x">sındırgı'da ne yenir</a></li>
                     </ul>
