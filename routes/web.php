@@ -26,3 +26,6 @@ Route::get('/Ulasim', 'Front\HomepageController@ulasim')->name('ulasim');
 Route::get('/SindirgidaNeYenir', 'Front\HomepageController@sindirgidaNeYenir')->name('sindirgidaNeYenir');
 Route::get('/YagcibedirHalisi', 'Front\HomepageController@yagcibedirHalisi')->name('yagcibedirHalisi');
 Route::get('/Festival', 'Front\HomepageController@festival')->name('festival');
+
+// Back Route's
+Route::get('dashboard', 'Back\DashboardController@index')->name('dashboard');
