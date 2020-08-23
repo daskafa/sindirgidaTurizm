@@ -28,4 +28,11 @@ Route::get('/YagcibedirHalisi', 'Front\HomepageController@yagcibedirHalisi')->na
 Route::get('/Festival', 'Front\HomepageController@festival')->name('festival');
 
 // Back Route's
-Route::get('dashboard', 'Back\DashboardController@index')->name('dashboard');
+Route::get('dashboard', 'Back\DashboardController@index')->name('dashboard')->middleware('isAdmin');
+
+// Login Route's
+Route::get('/login', 'Back\authController@login')->middleware('isLogin')->name('login');
+
+Route::post('/login', 'Back\authController@loginPost')->middleware('isLogin')->name('adminLoginPost');
+
+Route::get('/logout', 'Back\authController@logout')->middleware('isAdmin')->name('logout');
