@@ -19,9 +19,9 @@ class ArticleControlller extends Controller
     public function createPost(Request $request){
 
       $request->validate([
-        'title' => 'unique:articles',
-        'content' => 'unique:articles',
-        'slug' => 'unique:articles'
+        'title' => 'unique:articles|required',
+        'content' => 'unique:articles|required',
+        'slug' => 'unique:articles|required'
       ]);
 
       $article = new Article;
@@ -46,9 +46,9 @@ class ArticleControlller extends Controller
     public function updatePost(Request $request, $id){
 
       $request->validate([
-        'title' => 'unique:articles',
-        'content' => 'unique:articles',
-        'slug' => 'unique:articles'
+        'title' => 'unique:articles|required',
+        'content' => 'unique:articles|required',
+        'slug' => 'unique:articles|required'
       ]);
 
       $article = Article::find($id);
