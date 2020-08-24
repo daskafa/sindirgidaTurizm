@@ -25,7 +25,10 @@
               <td>{{$articles->title}}</td>
               <td>{{Str::limit($articles->content, 50, '...')}}</td>
               <td>{{$articles->created_at}}</td>
-              <td><a href="{{route('deletePost', $articles->id)}}"><i class="mdi mdi-delete"></i>Sil</a></td>
+              <td>
+                <a href="{{route('deletePost', $articles->id)}}"><i class="mdi mdi-delete"></i></a>
+                <a href="{{route('update', $articles->id)}}"> <i class="mdi mdi-pencil"></i></a>
+              </td>
             </tr>
             @endforeach
 

@@ -34,7 +34,40 @@ Route::get('/Festival', 'Front\HomepageController@festival')->name('festival');
 
 // Back Route's
 Route::get('dashboard', 'Back\DashboardController@index')->name('dashboard')->middleware('isAdmin');
-//
+//Create Route's
 Route::get('/dashboard/create', 'Back\ArticleControlller@create')->name('create');
 Route::post('/dashboard/createPost', 'Back\ArticleControlller@createPost')->name('createPost');
+//Delete Route's
 Route::get('/dashboard/deletePost/{id}', 'Back\ArticleControlller@deletePost')->name('deletePost');
+//Update Route's
+Route::get('/dashboard/update/{id}', 'Back\ArticleControlller@update')->name('update');
+Route::post('dashboard/updatePost/{id}', 'Back\ArticleControlller@updatePost')->name('updatePost');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

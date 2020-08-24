@@ -1951,6 +1951,24 @@ Container / Wrapper
     padding: 30px 30px 60px 30px;
 }
 
+.dashboard-content i{
+  font-size: 30px;
+  margin-left: 8px;
+  transition: .5s;
+}
+.dashboard-content .mdi-pencil{
+  color:#0b980b;
+}
+.dashboard-content .mdi-pencil:hover{
+  color:#057d05;
+}
+.dashboard-content .mdi-delete{
+  color:#dc3545;
+}
+.dashboard-content .mdi-delete:hover{
+  color:#cc1f2f;
+}
+
 
 /*-----------------------
 Splash Container / Wrapper
