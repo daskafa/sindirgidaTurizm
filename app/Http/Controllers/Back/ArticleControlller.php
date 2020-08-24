@@ -21,7 +21,7 @@ class ArticleControlller extends Controller
       $request->validate([
         'title' => 'unique:articles|required',
         'content' => 'unique:articles|required',
-        'slug' => 'unique:articles|required'
+        'slug' => 'unique:articles'
       ]);
 
       $article = new Article;
@@ -48,7 +48,7 @@ class ArticleControlller extends Controller
       $request->validate([
         'title' => 'unique:articles|required',
         'content' => 'unique:articles|required',
-        'slug' => 'unique:articles|required'
+        'slug' => 'unique:articles'
       ]);
 
       $article = Article::find($id);
