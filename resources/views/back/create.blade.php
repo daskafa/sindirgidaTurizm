@@ -12,6 +12,13 @@
                 <div class="card">
                     <h5 class="card-header">Haber Oluştur</h5>
                     <div class="card-body">
+                      @if ($errors->any())
+                        <div class="alert alert-danger">
+                          @foreach ($errors->all() as $error)
+                            <li>{{$error}}</li>
+                          @endforeach
+                        </div>
+                      @endif
                         <form action="{{route('createPost')}}" method="POST" enctype="multipart/form-data">
                           @csrf
                             <div class="form-group">
@@ -24,7 +31,7 @@
                             </div>
                             <div class="form-group">
                               <label>Fotoğrafı</label>
-                              <input type="file" name="image" class="form-control" required>
+                              <input type="file" name="image" class="form-control">
                             </div>
                             <button type="submit" class="btn btn-primary">Oluştur</button>
                         </form>

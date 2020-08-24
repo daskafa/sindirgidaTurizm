@@ -48,4 +48,12 @@ class HomepageController extends Controller
     public function festival(){
       return view('front.festival');
     }
+    public function tumhaberler(){
+      $article = Article::orderBy('created_at', 'DESC')->get();
+      return view('front.tum-haberler', compact('article'));
+    }
+    public function single($slug){
+      $article = Article::where('slug', $slug)->first();
+      return view('front.single', compact('article'));
+    }
 }

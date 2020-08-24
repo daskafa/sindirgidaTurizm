@@ -31,6 +31,8 @@ Route::get('/Ulasim', 'Front\HomepageController@ulasim')->name('ulasim');
 Route::get('/SindirgidaNeYenir', 'Front\HomepageController@sindirgidaNeYenir')->name('sindirgidaNeYenir');
 Route::get('/YagcibedirHalisi', 'Front\HomepageController@yagcibedirHalisi')->name('yagcibedirHalisi');
 Route::get('/Festival', 'Front\HomepageController@festival')->name('festival');
+Route::get('/Tumhaberler', 'Front\HomepageController@tumhaberler')->name('tumhaberler');
+Route::get('/haberler/{slug}', 'Front\HomepageController@single')->name('single');
 
 // Back Route's
 Route::get('dashboard', 'Back\DashboardController@index')->name('dashboard')->middleware('isAdmin');
@@ -42,7 +44,6 @@ Route::get('/dashboard/deletePost/{id}', 'Back\ArticleControlller@deletePost')->
 //Update Route's
 Route::get('/dashboard/update/{id}', 'Back\ArticleControlller@update')->name('update');
 Route::post('dashboard/updatePost/{id}', 'Back\ArticleControlller@updatePost')->name('updatePost');
-
 
 
 

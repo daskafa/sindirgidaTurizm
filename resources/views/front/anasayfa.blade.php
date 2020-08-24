@@ -248,7 +248,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="news-title">
-                            <a href="xxx">
+                            <a href="{{route('tumhaberler')}}">
                                 <h3>tüm güncel haberler için tıklayınız</h3>
                             </a>
                         </div>
@@ -274,7 +274,7 @@
                                     </div>
                                     <div class="news-description">
                                         <p>{{Str::limit($articles->content, 300, '...')}}<br><br>
-                                          <a href="xxx"><span style="color: #fff; background-color: #4c4c4c;border-radius: 5px;padding: 10px;">İlgili haberini görmek için tıklayınız</span></a>
+                                          <a href="{{route('single', $articles->slug)}}"><span style="color: #fff; background-color: #4c4c4c;border-radius: 5px;padding: 10px;">İlgili haberini görmek için tıklayınız</span></a>
                                         </p>
                                     </div>
                                 </div>
