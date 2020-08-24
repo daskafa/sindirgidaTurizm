@@ -4,12 +4,17 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+// Models
+use App\Models\Article;
+
 
 class HomepageController extends Controller
 {
     public function index(){
-      return view('front.anasayfa');
+      $article = Article::orderBy('created_at', 'DESC')->limit(5)->get();
+      return view('front.anasayfa', compact('article'));
     }
+
     public function gezilecekYerler(){
       return view('front.turistik-ilgi-noktalari');
     }

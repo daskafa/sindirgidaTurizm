@@ -10,10 +10,10 @@
                     Menu
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="mdi mdi-format-list-bulleted-type"></i>Haberleri Listele<span class="badge badge-success">6</span></a>
+                    <a class="nav-link @if(Request::segment(1) == 'dashboard' && !Request::segment(2)) active @else '' @endif" href="{{route('dashboard')}}"><i class="mdi mdi-format-list-bulleted-type"></i>Haberleri Listele<span class="badge badge-success">6</span></a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="mdi mdi-pencil-box"></i>Haber Oluştur<span class="badge badge-success">6</span></a>
+                    <a class="nav-link @if(Request::segment(2) == 'create') active @else '' @endif" href="{{route('create')}}" ><i class="mdi mdi-pencil-box"></i>Haber Oluştur<span class="badge badge-success">6</span></a>
                 </li>
             </ul>
         </div>

@@ -257,27 +257,32 @@
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      {{-- <?php foreach ($bilgi as $bilgi) { ?> --}}
+
+
+
+                      @foreach ($article as $articles)
                         <div class="swiper-slide">
                             <div class="item">
                                 <div class="image-bg">
                                     <div class="image">
-                                        <img src="{{asset('front/')}}/images/mayor.jpg">
+                                        <img src="{{$articles->image}}">
                                     </div>
                                 </div>
                                 <div class="news-text">
                                     <div class="news-title-2">
-                                        <h3> başlık başlık başlık başlık başlık başlık başlık başlık</h3>
+                                        <h3> {{$articles->title}}</h3>
                                     </div>
                                     <div class="news-description">
-                                        <p>description description description description description description description description description description description description description description description description description description<br><br>
+                                        <p>{{Str::limit($articles->content, 300, '...')}}<br><br>
                                           <a href="xxx"><span style="color: #fff; background-color: #4c4c4c;border-radius: 5px;padding: 10px;">İlgili haberini görmek için tıklayınız</span></a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      {{-- <?php } ?> --}}
+                      @endforeach
+
+
 
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->

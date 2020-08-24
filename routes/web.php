@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Login Route's
+Route::get('/login', 'Back\authController@login')->middleware('isLogin')->name('login');
+Route::post('/login', 'Back\authController@loginPost')->middleware('isLogin')->name('adminLoginPost');
+Route::get('/logout', 'Back\authController@logout')->middleware('isAdmin')->name('logout');
+
 // Front route's
 Route::get('/', 'Front\HomepageController@index')->name('homepage');
 Route::get('/GezilecekYerler', 'Front\HomepageController@gezilecekYerler')->name('gezilecekYerler');
@@ -29,10 +34,7 @@ Route::get('/Festival', 'Front\HomepageController@festival')->name('festival');
 
 // Back Route's
 Route::get('dashboard', 'Back\DashboardController@index')->name('dashboard')->middleware('isAdmin');
-
-// Login Route's
-Route::get('/login', 'Back\authController@login')->middleware('isLogin')->name('login');
-
-Route::post('/login', 'Back\authController@loginPost')->middleware('isLogin')->name('adminLoginPost');
-
-Route::get('/logout', 'Back\authController@logout')->middleware('isAdmin')->name('logout');
+//
+Route::get('/dashboard/create', 'Back\ArticleControlller@create')->name('create');
+Route::post('/dashboard/createPost', 'Back\ArticleControlller@createPost')->name('createPost');
+Route::get('/dashboard/deletePost/{id}', 'Back\ArticleControlller@deletePost')->name('deletePost');
