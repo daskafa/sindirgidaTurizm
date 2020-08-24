@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// https://pqina.nl/filepond/?ref=pqina
 // Login Route's
 Route::get('/login', 'Back\authController@login')->middleware('isLogin')->name('login');
 Route::post('/login', 'Back\authController@loginPost')->middleware('isLogin')->name('adminLoginPost');

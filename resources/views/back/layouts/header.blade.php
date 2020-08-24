@@ -8,7 +8,8 @@
     <title>Sındırgıda Turizm Dashboard</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('back/')}}/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="{{asset('back/')}}/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    {{-- <link href="{{asset('back/')}}/assets/vendor/fonts/circular-std/style.css" rel="stylesheet"> --}}
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('back/')}}/assets/libs/css/style.css">
     <link rel="stylesheet" href="{{asset('back/')}}/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="{{asset('back/')}}/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
