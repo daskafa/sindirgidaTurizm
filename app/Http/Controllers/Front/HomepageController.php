@@ -73,7 +73,7 @@ class HomepageController extends Controller
       OpenGraph::setUrl('http://sindirgidaturizm.com');
       OpenGraph::addProperty('type', 'article');
       OpenGraph::addProperty('locale', 'tr-TR');
-      OpenGraph::addProperty('locale:alternate', ['tr-TR', 'tr-TR']);
+      OpenGraph::addProperty('locale:alternate', ['ru-RU']);
 
       OpenGraph::addImage($article->image);
       // OpenGraph::addImage($article->image->list('url'));
