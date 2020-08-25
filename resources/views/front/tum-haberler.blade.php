@@ -5,10 +5,10 @@
 <div class="container">
 @foreach ($article as $articles)
   <div class="row">
-    <div class="card mb-3" style="max-width: 70%; margin: 0 auto;">
-      <div class="row no-gutters">
+    <div class="card mb-3 mx-auto" style="max-width: 70%; margin: 0 auto;">
+      <div class="row">
         <div class="col-md-4">
-          <img style="width:100%; height:216px; object-fit:cover; padding: 10px; border-radius:20px;" src="{{$articles->image}}" class="card-img" alt="...">
+          <img style="max-width: 40em;max-height: 10em;object-fit: cover;" src="{{'/' . $articles->image}}" class="card-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -23,6 +23,7 @@
 @endforeach
 </div>
 
+{{-- width:100%; height:216px; object-fit:cover; padding: 10px; border-radius:20px; --}}
 
 
     @include('front.layouts.footer')

@@ -4,6 +4,12 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+// SEOMeta
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+// SEOMeta
 // Models
 use App\Models\Article;
 
@@ -54,6 +60,48 @@ class HomepageController extends Controller
     }
     public function single($slug){
       $article = Article::where('slug', $slug)->first();
+
+      // SEOMeta
+      SEOMeta::setTitle($article->title);
+      SEOMeta::setDescription($article->content);
+      SEOMeta::addMeta('article:published_time', $article->created_at, 'property');
+      SEOMeta::addMeta('article:section', $article->title, 'property');
+      SEOMeta::addKeyword(['Sındırgı', 'Leylek', 'Doğalşehir']);
+
+      OpenGraph::setDescription($article->content);
+      OpenGraph::setTitle($article->title);
+      OpenGraph::setUrl('http://sindirgidaturizm.com');
+      OpenGraph::addProperty('type', 'article');
+      OpenGraph::addProperty('locale', 'tr-TR');
+      OpenGraph::addProperty('locale:alternate', ['tr-TR', 'tr-TR']);
+
+      OpenGraph::addImage($article->image);
+      // OpenGraph::addImage($article->image->list('url'));
+      // OpenGraph::addImage(['url' => 'http://image.url.com/cover.jpg', 'size' => 300]);
+      // OpenGraph::addImage('http://image.url.com/cover.jpg', ['height' => 300, 'width' => 300]);
+
+      JsonLd::setTitle($article->title);
+      JsonLd::setDescription($article->content);
+      JsonLd::setType('Article');
+      JsonLd::addImage($article->image);
+
+
+
       return view('front.single', compact('article'));
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}//
