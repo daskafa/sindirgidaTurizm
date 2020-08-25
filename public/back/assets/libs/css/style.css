@@ -1903,10 +1903,12 @@ Sidebar Page Navigations
 .dropdown-item {
     display: block;
     width: 100%;
-    padding: .25rem 1.5rem;
+    padding: 10px 20px;
+    transition: .3s;
+    border-radius: 5px;
     clear: both;
     font-weight: 400;
-    color: #3d405c;
+    color: #0e0c28;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -1914,8 +1916,8 @@ Sidebar Page Navigations
 }
 
 .dropdown-item:hover {
-    color: #5969ff;
-    background: #efeff6;
+    color: #fff;
+    background: #0e0c28;
 }
 
 .page-section {}

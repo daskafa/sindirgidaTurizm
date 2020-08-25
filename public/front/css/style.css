@@ -2031,6 +2031,25 @@ body {
   height: auto;
 }
 
+.pagination{
+  justify-content: center;
+}
+.pagination .page-item{
+  margin-left: 5px;
+}
+.pagination .page-link{
+  color: #fff;
+  background-color: #ed1c24;
+}
+
+.page-item.active .page-link{
+  background-color: #121415;
+  border-color: inherit;
+}
+
+.pagination .page-link:hover{
+  color: #fff;
+}
 
 
 /* MEDIA SCREEN */

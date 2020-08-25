@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\Paginator;
 // SEOMeta
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
@@ -55,8 +56,9 @@ class HomepageController extends Controller
       return view('front.festival');
     }
     public function tumhaberler(){
-      $article = Article::orderBy('created_at', 'DESC')->get();
+      $article = Article::orderBy('created_at', 'DESC')->paginate(5);
       return view('front.tum-haberler', compact('article'));
+
     }
     public function single($slug){
       $article = Article::where('slug', $slug)->first();
